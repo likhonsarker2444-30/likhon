@@ -35,7 +35,18 @@
 .about-foot small { display: block; color: var(--muted); }
 
 /* ---- Experience / Training কার্ড ---- */
-.tl-card { display: flex; flex-direction: column; overflow: hidden; }
+/* ---- Experience / Training কার্ড ---- */
+.tl-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  max-width: 720px;   /* About card এর মতো width */
+  width: 100%;
+  margin: 0 auto;     /* Center এ থাকবে */
+  padding: 36px;      /* About card এর মতো padding */
+}
 .tl-card::before {
   content: ""; position: absolute; top: 0; left: 0; right: 0;
   height: 4px; background: var(--gradient-accent); opacity: .75;
